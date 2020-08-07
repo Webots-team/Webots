@@ -1,0 +1,8 @@
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (1, null, null, null, null, null, 'VK', 'https://www.vk.com/');
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (2, null, null, null, null, null, 'Instagram', 'https://www.instagram.com/');
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (3, null, null, null, null, null, 'Facebook', 'https://www.facebook.com/');
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (4, null, null, null, null, null, 'YouTube', 'https://www.youtube.com/');
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (5, null, null, null, null, null, 'Twitter', 'https://twitter.com/');
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (6, null, null, null, null, null, 'OK', 'https://ok.ru/');
+INSERT INTO webots.social_networks (id, created_by_id, last_modified_by_id, created_date, last_modified_date, icon, name, url) VALUES (7, null, null, null, null, null, 'Skype', 'https://www.skype.com/');
+-- скрипт для создания готовых соцсетей
