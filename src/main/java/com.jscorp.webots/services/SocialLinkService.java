@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 @Slf4j
@@ -46,14 +47,14 @@ public class SocialLinkService {
         twitter.setProfile(profile);
         SocialLink OK = new SocialLink(socialNetworkService.findByName("OK"));
         OK.setProfile(profile);
-        Set <SocialLink> socialLinks = new HashSet<>();
-        socialLinks.add(VK);
-        socialLinks.add(instagram);
-        socialLinks.add(FB);
-        socialLinks.add(skype);
-        socialLinks.add(youTube);
-        socialLinks.add(twitter);
-        socialLinks.add(OK);
+        Set <SocialLink> socialLinks = new HashSet<>(Arrays.asList(VK,instagram,FB,skype,youTube,twitter,OK));
+//        socialLinks.add(VK);
+//        socialLinks.add(instagram);
+//        socialLinks.add(FB);
+//        socialLinks.add(skype);
+//        socialLinks.add(youTube);
+//        socialLinks.add(twitter);
+//        socialLinks.add(OK);
         log.info("Social links: " + socialLinks);
         return socialLinks;
 

@@ -23,7 +23,7 @@ create table webots.users_roles
 
 alter table webots.users_roles
     owner to postgres;
---эта таблица profile. Она была в старом коде, не уверен, что нужна
+--эта таблица profile. Она была в старом коде (называлась profile, переименовал чтобы не путаться), не уверен, что нужна
 -- create table webots.z
 -- (
 --     id         bigserial                                 not null
@@ -126,8 +126,7 @@ create table webots.social_links
     modified_by_id      serial,
     last_modified_by_id serial,
     last_modified_date  serial,
-    -- Only integer types can be auto increment
-    link                varchar default nextval('webots.social_links_links_seq'::regclass)
+    link                varchar
 );
 
 alter table webots.social_links

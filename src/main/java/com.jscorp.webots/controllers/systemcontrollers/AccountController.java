@@ -37,7 +37,7 @@ public class AccountController {
     @GetMapping ("/")
     public ResponseEntity<?> account(@RequestHeader("Authorization") String token ){
         User user = tokenService.findToken(token).getUser();
-        return new ResponseEntity<>(new LoginResponse(token, new UserPub(user)), HeaderResponse.tokenAuthorization(token), HttpStatus.OK);
+        return new ResponseEntity<>(new LoginResponse(tokenService.findToken(token).getToken(), new UserPub(user)), HeaderResponse.tokenAuthorization(token), HttpStatus.OK);
     }
 
     @PostMapping ("/change-account-data")

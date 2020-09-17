@@ -19,7 +19,6 @@ com\jscorp\webots\repository\UserRepository.class
 com\jscorp\webots\utils\SystemUser.class
 com\jscorp\webots\configs\SecurityWebApplicationInitializer.class
 com\jscorp\webots\responses\StatusResponseEmailExist.class
-com\jscorp\webots\entities\UserImage.class
 com\jscorp\webots\pub\UserProfilePub$WorkSchedulePub.class
 com\jscorp\webots\exception\UserExistException.class
 com\jscorp\webots\enums\GenderEnum.class

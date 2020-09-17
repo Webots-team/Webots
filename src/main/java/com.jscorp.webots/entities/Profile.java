@@ -15,8 +15,6 @@ import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.Set;
 
-import static java.lang.String.format;
-
 /**
  * @author Teplykh Timofey  05.04.2020
  */

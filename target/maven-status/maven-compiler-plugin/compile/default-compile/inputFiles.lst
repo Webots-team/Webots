@@ -55,7 +55,6 @@ C:\ffc\Webots\src\main\java\com.jscorp.webots\jwt\JwtAuthenticationException.jav
 C:\ffc\Webots\src\main\java\com.jscorp.webots\services\UserServiceImpl.java
 C:\ffc\Webots\src\main\java\com.jscorp.webots\controllers\systemcontrollers\AccountController.java
 C:\ffc\Webots\src\main\java\com.jscorp.webots\pub\SocialLinkPub.java
-C:\ffc\Webots\src\main\java\com.jscorp.webots\entities\UserImage.java
 C:\ffc\Webots\src\main\java\com.jscorp.webots\jwt\JwtUser.java
 C:\ffc\Webots\src\main\java\com.jscorp.webots\entities\Role.java
 C:\ffc\Webots\src\main\java\com.jscorp.webots\utils\UTCProvider.java

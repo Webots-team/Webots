@@ -3,3 +3,4 @@ CREATE SEQUENCE hibernate_sequence
     increment by 1
     cycle;
 -- скрипт для возможности создания авто последовательности
+-- запустить по необходимости
