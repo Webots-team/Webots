@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.900c4653.chunk.css",
-    "main.js": "/static/js/main.0cc342c2.chunk.js",
-    "main.js.map": "/static/js/main.0cc342c2.chunk.js.map",
+    "main.css": "/static/css/main.3383b911.chunk.css",
+    "main.js": "/static/js/main.53f79986.chunk.js",
+    "main.js.map": "/static/js/main.53f79986.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ad51c9b.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ad51c9b.js.map",
-    "static/js/2.8b12ec78.chunk.js": "/static/js/2.8b12ec78.chunk.js",
-    "static/js/2.8b12ec78.chunk.js.map": "/static/js/2.8b12ec78.chunk.js.map",
+    "static/js/2.d529d418.chunk.js": "/static/js/2.d529d418.chunk.js",
+    "static/js/2.d529d418.chunk.js.map": "/static/js/2.d529d418.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.48a1e49e8bb5516f9736d8889f5b3d18.js": "/precache-manifest.48a1e49e8bb5516f9736d8889f5b3d18.js",
+    "precache-manifest.885a8c3c9d950db92900200647e0c658.js": "/precache-manifest.885a8c3c9d950db92900200647e0c658.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.900c4653.chunk.css.map": "/static/css/main.900c4653.chunk.css.map",
-    "static/js/2.8b12ec78.chunk.js.LICENSE": "/static/js/2.8b12ec78.chunk.js.LICENSE",
+    "static/css/main.3383b911.chunk.css.map": "/static/css/main.3383b911.chunk.css.map",
+    "static/js/2.d529d418.chunk.js.LICENSE": "/static/js/2.d529d418.chunk.js.LICENSE",
     "static/media/index.css": "/static/media/GothamPro-Medium.c1613691.ttf",
     "static/media/about-webots-functions-block.css": "/static/media/mobile-about-webots-decorate-phone.b1bb0638.svg",
     "static/media/about-webots.css": "/static/media/about-webots-mobile.efdc7564.svg",
@@ -24,15 +24,16 @@
     "static/media/create-uniform-style-block.css": "/static/media/create-uniform-style-block-mobile-fone.edc1ff6c.svg",
     "static/media/google.svg": "/static/media/google.a333cd9f.svg",
     "static/media/header__form.css": "/static/media/mobile-logo.d2ea02ba.svg",
-    "static/media/header__notification-img.css": "/static/media/notofication-button.172f58c6.svg",
+    "static/media/map-marker.svg": "/static/media/map-marker.2a83b69a.svg",
+    "static/media/demonstration-window__header.css": "/static/media/notofication-button.172f58c6.svg",
     "static/media/our-partners-block.css": "/static/media/our-partners-fone.75101aa3.svg",
     "static/media/usevariants-decorate-element.svg": "/static/media/usevariants-decorate-element.9e169971.svg",
     "static/media/work-with-real-users-img.svg": "/static/media/work-with-real-users-img.182f8826.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2ad51c9b.js",
-    "static/js/2.8b12ec78.chunk.js",
-    "static/css/main.900c4653.chunk.css",
-    "static/js/main.0cc342c2.chunk.js"
+    "static/js/2.d529d418.chunk.js",
+    "static/css/main.3383b911.chunk.css",
+    "static/js/main.53f79986.chunk.js"
   ]
 }
