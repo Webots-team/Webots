@@ -2,11 +2,15 @@ package com.jscorp.webots.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import com.jscorp.webots.entities.SocialLink;
 import lombok.Data;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
+
 /**
  * @author airat_f17@mail.ru
  */
@@ -48,9 +52,8 @@ public class ProfileDTO {
     private String UTC;
     @NotNull
     @JsonProperty("social_links")
-    private Map<String,String> socialLinks;
+    private List<SocialLinksDTO> socialLinks;
 
     private byte[] photo;
-
 
 }

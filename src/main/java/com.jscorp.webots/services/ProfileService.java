@@ -1,6 +1,7 @@
 package com.jscorp.webots.services;
 
 import com.jscorp.webots.dtos.ProfileDTO;
+import com.jscorp.webots.dtos.SocialLinksDTO;
 import com.jscorp.webots.entities.Location;
 import com.jscorp.webots.entities.Profile;
 import com.jscorp.webots.entities.User;
@@ -34,16 +35,17 @@ public class ProfileService {
     public void saveChanges(ProfileDTO profileDTO, User user){
         Session session = entityManager.unwrap(Session.class);
         Profile profile = user.getProfile();
-        if (profileDTO.getLastname() != null){
+        if (!profileDTO.getLastname().equals("")){
             profile.setLastname(profileDTO.getLastname());
         }
-        if (profileDTO.getFirstname() !=null){
-            profile.setFirstname(profile.getFirstname());
+        if (!profileDTO.getFirstname().equals("")){
+            user.setUsername(profileDTO.getFirstname());
+            profile.setFirstname(profileDTO.getFirstname());
         }
-        if (profileDTO.getPatronymic() != null){
+        if (!profileDTO.getPatronymic().equals("")){
             profile.setPatronymic(profileDTO.getPatronymic());
         }
-        if (profileDTO.getEmail() != null){
+        if (!profileDTO.getEmail().equals("")){
             profile.setEmail(profileDTO.getEmail());
             user.setEmail(profileDTO.getEmail());
         }
@@ -71,11 +73,12 @@ public class ProfileService {
             setSocialLinksFromDTO(profileDTO,profile);
 
         }
-        session.saveOrUpdate(profile);
+
+        session.update(user);
+        session.update(profile);
 
     }
     private void setBirthdateFromDTO(ProfileDTO profileDTO, Profile profile){
-
         LocalDate bithdateFromProfile = profile.getBirthdate() == null ? LocalDate.of(1900,1,1) : profile.getBirthdate();
         int newDay = bithdateFromProfile.getDayOfMonth();
         int newMoth = bithdateFromProfile.getMonthValue();
@@ -95,51 +98,47 @@ public class ProfileService {
         bithdateFromProfile = LocalDate.of(newYear,newMoth,newDay);
         profile.setBirthdate(bithdateFromProfile);
     }
-    private void setSocialLinksFromDTO(ProfileDTO profileDTO, Profile profile){
-        for (Map.Entry<String,String> entry : profileDTO.getSocialLinks().entrySet()){
-            if (entry.getKey().equals("VK") && entry.getValue() != null){
+
+    private void setSocialLinksFromDTO(ProfileDTO profileDTO,Profile profile){
+        for (SocialLinksDTO socialLinks : profileDTO.getSocialLinks()){
+            if (socialLinks.getName().equals("VK") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("VK"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("VK")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
-            if (entry.getKey().equals("Instagram") && entry.getValue() != null){
+            if (socialLinks.getName().equals("Instagram") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("Instagram"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("Instagram")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
-            if (entry.getKey().equals("Facebook") && entry.getValue() != null){
+            if (socialLinks.getName().equals("Facebook") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("Facebook"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("Facebook")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
-            if (entry.getKey().equals("YouTube") && entry.getValue() != null){
+            if (socialLinks.getName().equals("YouTube") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("YouTube"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("YouTube")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
-            if (entry.getKey().equals("Twitter") && entry.getValue() != null){
+            if (socialLinks.getName().equals("Twitter") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("Twitter"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("Twitter")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
-            if (entry.getKey().equals("OK") && entry.getValue() != null){
+            if (socialLinks.getName().equals("OK") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("OK"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("OK")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
-            if (entry.getKey().equals("Skype") && entry.getValue() != null){
+            if (socialLinks.getName().equals("Skype") && socialLinks.getLink() != null){
                 profile.getSocialLinks().stream().filter(l -> l.getSocialNetwork()
                         .getName()
-                        .equals("Skype"))
-                        .forEach(l -> l.setLink(entry.getValue()));
+                        .equals("Skype")).forEach(l -> l.setLink(socialLinks.getLink()));
             }
+
         }
+
     }
 
 }

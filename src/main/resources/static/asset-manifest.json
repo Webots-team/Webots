@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3383b911.chunk.css",
-    "main.js": "/static/js/main.53f79986.chunk.js",
-    "main.js.map": "/static/js/main.53f79986.chunk.js.map",
+    "main.css": "/static/css/main.9683f64b.chunk.css",
+    "main.js": "/static/js/main.dbe26a19.chunk.js",
+    "main.js.map": "/static/js/main.dbe26a19.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ad51c9b.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ad51c9b.js.map",
-    "static/js/2.d529d418.chunk.js": "/static/js/2.d529d418.chunk.js",
-    "static/js/2.d529d418.chunk.js.map": "/static/js/2.d529d418.chunk.js.map",
+    "static/css/2.673c33e9.chunk.css": "/static/css/2.673c33e9.chunk.css",
+    "static/js/2.1be893f0.chunk.js": "/static/js/2.1be893f0.chunk.js",
+    "static/js/2.1be893f0.chunk.js.map": "/static/js/2.1be893f0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.885a8c3c9d950db92900200647e0c658.js": "/precache-manifest.885a8c3c9d950db92900200647e0c658.js",
+    "precache-manifest.49ef5e599ee8371ddff35751bf582611.js": "/precache-manifest.49ef5e599ee8371ddff35751bf582611.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3383b911.chunk.css.map": "/static/css/main.3383b911.chunk.css.map",
-    "static/js/2.d529d418.chunk.js.LICENSE": "/static/js/2.d529d418.chunk.js.LICENSE",
+    "static/css/2.673c33e9.chunk.css.map": "/static/css/2.673c33e9.chunk.css.map",
+    "static/css/main.9683f64b.chunk.css.map": "/static/css/main.9683f64b.chunk.css.map",
+    "static/js/2.1be893f0.chunk.js.LICENSE": "/static/js/2.1be893f0.chunk.js.LICENSE",
     "static/media/index.css": "/static/media/GothamPro-Medium.c1613691.ttf",
     "static/media/about-webots-functions-block.css": "/static/media/mobile-about-webots-decorate-phone.b1bb0638.svg",
     "static/media/about-webots.css": "/static/media/about-webots-mobile.efdc7564.svg",
@@ -22,6 +24,8 @@
     "static/media/coursera.svg": "/static/media/coursera.384ccacb.svg",
     "static/media/create-assistants-block.css": "/static/media/mobile-decorate-phone-element.3ad2a09b.svg",
     "static/media/create-uniform-style-block.css": "/static/media/create-uniform-style-block-mobile-fone.edc1ff6c.svg",
+    "static/media/profile-settings-field.css": "/static/media/directory-settings-field-arrow.228f8b69.svg",
+    "static/media/birth-date-section.css": "/static/media/fields-arrow.433147d3.svg",
     "static/media/google.svg": "/static/media/google.a333cd9f.svg",
     "static/media/header__form.css": "/static/media/mobile-logo.d2ea02ba.svg",
     "static/media/map-marker.svg": "/static/media/map-marker.2a83b69a.svg",
@@ -32,8 +36,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2ad51c9b.js",
-    "static/js/2.d529d418.chunk.js",
-    "static/css/main.3383b911.chunk.css",
-    "static/js/main.53f79986.chunk.js"
+    "static/css/2.673c33e9.chunk.css",
+    "static/js/2.1be893f0.chunk.js",
+    "static/css/main.9683f64b.chunk.css",
+    "static/js/main.dbe26a19.chunk.js"
   ]
 }

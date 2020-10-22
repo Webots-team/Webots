@@ -24,6 +24,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -194,6 +195,8 @@ public class UserServiceImpl implements UserService {
         profile.setFirstname(user.getFirstname());
         profile.setUTC(UTCProvider.getUtc());
         profile.setEmail(userAuthenticationDTO.getEmail());
+        LocalDate birthdate = LocalDate.now();
+        profile.setBirthdate(birthdate);
         profile.setLocation(location);
         profile.setUser(user);
         user.setProfile(profile);

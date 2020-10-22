@@ -13,12 +13,8 @@ import lombok.Setter;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.sql.Date;
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.ZoneOffset;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -49,7 +45,8 @@ public class UserProfilePub {
     private String patronymic;
 
     @ApiModelProperty(value = "Дата рождения", position = 4)
-    private LocalDate birthdate;
+    private BirthdatePub birthdate;
+//    private LocalDate birthdate;
 
     @ApiModelProperty(value = "User gender",
             allowableValues = "M - MALE, F - FEMALE, X - Xgender",
@@ -87,7 +84,8 @@ public class UserProfilePub {
         this.firstname = user.getProfile().getFirstname();
         this.patronymic = user.getProfile().getPatronymic();
         this.email = user.getProfile().getEmail();
-        this.birthdate = user.getProfile().getBirthdate();
+        this.birthdate = new BirthdatePub(user.getProfile().getBirthdate());
+//        this.birthdate = user.getProfile().getBirthdate();
         this.gender = user.getProfile().getGender();
         this.country = user.getProfile().getLocation() == null ? null :
                 user.getProfile().getLocation().getCountry();
